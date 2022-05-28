@@ -36,6 +36,7 @@ spec:
           - --kubelet-preferred-address-types=InternalIP
           - --kubelet-insecure-tls
         imagePullPolicy: Always
+        hostNetwork: true
         volumeMounts:
         - name: tmp-dir
           mountPath: /tmp
